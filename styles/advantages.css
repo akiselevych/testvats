@@ -1,0 +1,69 @@
+
+.advantages__container {
+    background-color: var(--yellow);
+    padding: clamp(1.25rem, 0.636rem + 3.64vw, 5rem) 24px clamp(1.25rem, 0.432rem + 4.85vw, 6.25rem);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: clamp(2.5rem, -5.126rem + 12.61vw, 10rem);
+    row-gap: clamp(1.875rem, -0.985rem + 4.73vw, 4.688rem);
+    justify-items: center;
+
+    .advantages__card {
+        max-width: clamp(16.25rem, 6.336rem + 16.39vw, 26rem);
+        width: 100%;
+        height: clamp(5.875rem, 4.479rem + 5.95vw, 11.625rem);
+        background-color: white;
+        padding: 18px clamp(0.5rem, -0.136rem + 1.05vw, 1.125rem);
+        border-radius: 10px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: clamp(0.5rem, 0.418rem + 0.48vw, 1rem);
+
+        &:nth-child(2) {
+            background-color: transparent;
+            background-image: url("../assets/advantages/bc.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .advantages__name {
+        font-size: clamp(1rem, 0.492rem + 0.84vw, 1.5rem);
+        font-weight: 400;
+        line-height: clamp(1.25rem, 0.678rem + 0.95vw, 1.813rem);
+        letter-spacing: 0.08em;
+        color: var(--brown);
+        text-align: center;
+    }
+
+    .advantages__advantage {
+        font-size: clamp(1rem, 0.492rem + 0.84vw, 1.5rem);
+        line-height: clamp(1.25rem, 0.678rem + 0.95vw, 1.813rem);
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--brown);
+    }
+
+    .advantages__tel{
+        width: clamp(3.75rem, 2.893rem + 2.8vw, 6.25rem);
+        height: clamp(3.75rem, 2.893rem + 2.8vw, 6.25rem);
+        border-radius: 50%;
+        background-color: var(--brown);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: fixed;
+        right: clamp(0.75rem, -0.278rem + 3.36vw, 3.75rem);
+        top: 85%;
+        z-index: 25;
+    }
+}
+

@@ -1,0 +1,23 @@
+
+.header__container {
+    padding: clamp(2.625rem, 0.683rem + 8.28vw, 10.625rem) clamp(0.625rem, 0.322rem + 1.29vw, 1.875rem) clamp(2.5rem, 1.135rem + 5.83vw, 8.125rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(0.625rem, -0.091rem + 4.24vw, 5rem);
+
+    .header__text {
+        font-family: 'Bebas Neue Cyrillic', sans-serif;
+        font-size: clamp(2.875rem, -0.22rem + 13.2vw, 15.625rem);
+        font-weight: 400;
+        line-height: clamp(2.875rem, -0.22rem + 13.2vw, 15.625rem);
+        letter-spacing: 0.08em;
+        color: var(--yellow);
+    }
+
+    .header__image {
+        width: clamp(8.438rem, 3.477rem + 21.17vw, 28.875rem);
+        height: clamp(2.125rem, 0.578rem + 6.6vw, 8.5rem);
+    }
+}
+

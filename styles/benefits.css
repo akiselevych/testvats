@@ -1,0 +1,116 @@
+
+
+.benefits__container {
+    max-width: 1738px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: clamp(3.125rem, 2.697rem + 1.4vw, 4.375rem);
+
+
+    .benefits__header {
+        background-image: url('../assets/benefits/decor.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        padding-top: clamp(1.5rem, -0.556rem + 6.71vw, 7.5rem);
+        padding-bottom: clamp(2.125rem, -1.002rem + 10.21vw, 11.25rem);
+        padding-right: clamp(1.25rem, -0.035rem + 4.2vw, 5rem);
+        @media (max-width: 1105px) {
+            background-size: cover;
+        }
+    }
+    .benefits__title{
+        font-family: 'Bebas Neue Cyrillic',sans-serif;
+        font-size: clamp(1.25rem, -0.463rem + 5.59vw, 6.25rem);
+        font-weight: 400;
+        line-height: clamp(1.25rem, -0.463rem + 5.59vw, 6.25rem);
+        letter-spacing: 0.06em;
+        margin-left: auto;
+        width: fit-content;
+        color: white;
+    }
+
+    .benefits__benefits {
+        position: relative;
+        margin-top: clamp(1.5rem, 0.875rem + 2.08vw, 3.375rem);
+    }
+
+    .benefits__caramel1 {
+        position: absolute;
+        width: clamp(8.75rem, 5.496rem + 13.7vw, 21.938rem);
+        height: clamp(5.625rem, 2.556rem + 12.92vw, 18.063rem);
+        right: 150px;
+        top: -12%;
+        object-fit: contain;
+        @media (max-width: 1555px) {
+            top: -8%;
+        }
+        @media (max-width: 1335px) {
+            top: -4%;
+        }
+        @media (max-width: 1060px) {
+            top: 70%;
+            left: -2%;
+            transform: rotate(180deg);
+        }
+    }
+
+    .benefits__caramel2 {
+        position: absolute;
+        width: clamp(7.125rem, 5.166rem + 8.25vw, 15.063rem);
+        height: clamp(5.875rem, 4.934rem + 3.96vw, 9.688rem);
+        left: clamp(0rem, -2.656rem + 8.67vw, 7.75rem);
+        bottom: 50px;
+        object-fit: contain;
+        @media (max-width: 1060px) {
+            top: 25%;
+        }
+    }
+
+    .benefits__benefit {
+        display: flex;
+        gap: clamp(1.875rem, 0.487rem + 5.84vw, 7.5rem);
+        width: fit-content;
+        margin-left: clamp(1.125rem, -4.766rem + 24.81vw, 25rem);
+        margin-right: 20px;
+        @media (max-width: 530px) {
+            align-items: center;
+        }
+    }
+
+    .benefits__num {
+        font-family: 'Bebas Neue Cyrillic', sans-serif;
+        font-size: 260px;
+        font-weight: 400;
+        line-height: 238px;
+        letter-spacing: 0.08em;
+        color: var(--yellow);
+
+    }
+
+    .benefits__line {
+        margin-bottom: clamp(1.75rem, 1.102rem + 2.73vw, 4.375rem);
+        width: 100%;
+        height: auto;
+    }
+
+    .benefits__points {
+
+        li {
+            list-style: disc inside;
+            font-size: clamp(1.25rem, 1.157rem + 0.39vw, 1.625rem);
+            font-weight: 400;
+            line-height: clamp(1.5rem, 1.392rem + 0.45vw, 1.938rem);
+            letter-spacing: 0.04em;
+            color: var(--brown);
+        }
+    }
+
+    .benefits__small_title {
+        font-size: clamp(1.5rem, 1.438rem + 0.26vw, 1.75rem);
+        font-weight: 700;
+        line-height: clamp(1.813rem, 1.735rem + 0.32vw, 2.125rem);
+        color: var(--brown);
+        margin-bottom: 20px;
+    }
+}

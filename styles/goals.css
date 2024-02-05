@@ -1,0 +1,76 @@
+
+
+.goals__container {
+    padding-top: clamp(2.5rem, -0.927rem + 11.19vw, 12.5rem);
+    padding-bottom: clamp(2.5rem, -0.927rem + 11.19vw, 12.5rem);
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: clamp(1rem, -0.799rem + 5.87vw, 6.25rem);
+    @media (max-width: 1250px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 670px) {
+        grid-template-columns: 1fr;
+    }
+
+    .goals__goal {
+        width: clamp(18.438rem, 14.047rem + 14.34vw, 31.25rem);
+        height: clamp(13.75rem, 12.144rem + 5.24vw, 18.438rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        padding-top: 30px;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        &:nth-child(1) {
+            background-image: url('../assets/goals/1.png');
+        }
+
+        &:nth-child(2) {
+            background-image: url('../assets/goals/2.png');
+        }
+
+        &:nth-child(3) {
+            background-image: url('../assets/goals/3.png');
+        }
+
+        &:nth-child(4) {
+            background-image: url('../assets/goals/4.png');
+        }
+
+        &:nth-child(5) {
+            background-image: url('../assets/goals/5.png');
+        }
+
+        &:nth-child(6) {
+            background-image: url('../assets/goals/6.png');
+        }
+    }
+
+    .goals__num {
+        font-family: 'Bebas Neue Cyrillic', sans-serif;
+        font-size: clamp(3.75rem, 2.337rem + 4.62vw, 7.875rem);
+        font-weight: 400;
+        line-height: clamp(3.75rem, 2.337rem + 4.62vw, 7.875rem);
+        letter-spacing: 0.06em;
+        margin-bottom: clamp(1rem, 0.7rem + 0.98vw, 1.875rem);
+        color: var(--brown);
+    }
+
+    .goals__text {
+        font-size: clamp(1.25rem, 1.164rem + 0.28vw, 1.5rem);
+        font-weight: 700;
+        line-height: clamp(1.563rem, 1.477rem + 0.28vw, 1.813rem);
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: var(--brown);
+        text-transform: uppercase;
+    }
+}

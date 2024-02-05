@@ -1,0 +1,49 @@
+
+
+.sign__container {
+    display: flex;
+    @media (max-width: 1260px) {
+        flex-direction: column;
+    }
+
+    .sign__image {
+        display: block;
+        min-width: clamp(23.75rem, 12.571rem + 36.5vw, 56.375rem);
+        height: auto;
+        object-fit: cover;
+        @media (max-width: 1260px) {
+            width: 100%;
+        }
+        @media (max-width: 620px) {
+            height: clamp(21.25rem, -8.197rem + 96.15vw, 29.063rem);
+            min-width: 250px;
+        }
+    }
+
+    .sign__right {
+        padding: clamp(3.75rem, 3.086rem + 2.17vw, 5.688rem) clamp(2rem, 0.972rem + 3.36vw, 5rem) 46px clamp(2rem, 1.55rem + 1.47vw, 3.313rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 35px;
+    }
+
+    .sign__text_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .sign__text {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.04em;
+        color: var(--brown);
+    }
+
+    .sign__sight {
+        width: clamp(13.438rem, 9.583rem + 12.59vw, 24.688rem);
+        height: clamp(4.375rem, 3.09rem + 4.2vw, 8.125rem);
+    }
+}

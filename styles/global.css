@@ -1,0 +1,50 @@
+@import "./reset.css";
+@import "./header.css";
+@import "./advantages.css";
+@import "./waves.css";
+@import "./history.css";
+@import "./selfmade.css";
+@import "./goals.css";
+@import "./products.css";
+@import "./looks.css";
+@import "./benefits.css";
+@import "./steps.css";
+@import "./requirements.css";
+@import "./video.css";
+@import "./model.css";
+@import "./sale.css";
+@import "./sign.css";
+@import "./form.css";
+
+:root{
+    --yellow: #E6C126;
+    --brown: #5C3D32;
+}
+
+@font-face {
+    font-family: "Bebas Neue Cyrillic";
+    src: url("../font/Bebas_Neue_Cyrillic.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../font/CenturyGothic.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Century Gothic";
+    src: url("../font/CenturyGothic-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+body{
+    font-family: "Century Gothic",sans-serif;
+    box-sizing: border-box;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    overflow-x: hidden;
+}

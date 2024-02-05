@@ -1,0 +1,84 @@
+
+.sale__container {
+
+
+    .sale__top {
+        margin: 0 auto;
+        padding: clamp(3rem, -0.255rem + 10.63vw, 12.5rem) clamp(0.938rem, -9.162rem + 16.49vw, 10.625rem) clamp(1.875rem, -0.695rem + 8.39vw, 9.375rem);
+    }
+
+    .sale__title {
+        font-family: 'Bebas Neue Cyrillic', sans-serif;
+        font-size: clamp(3.375rem, 0.462rem + 9.51vw, 11.875rem);
+        font-weight: 400;
+        line-height: clamp(3.375rem, 0.462rem + 9.51vw, 11.875rem);
+        letter-spacing: 0.06em;
+        color: var(--yellow);
+        width: fit-content;
+        margin: 0 auto;
+        @media (max-width: 660px) {
+            font-size: 54px;
+            line-height: 54px;
+            letter-spacing: 0.06em;
+            text-align: center;
+        }
+    }
+
+    .sale__cake {
+        max-width: clamp(8.313rem, 3.325rem + 12.07vw, 17.813rem);
+        height: auto;
+        @media (max-width: 660px) {
+            display: none;
+        }
+    }
+
+    .sale__mob_cake {
+        display: block;
+        width: 129px;
+        height: 64px;
+        margin: 0 auto 24px;
+        @media (min-width: 661px) {
+            display: none;
+        }
+    }
+
+    .sale__colored {
+        color: white;
+        background-color: var(--brown);
+        @media (max-width: 660px) {
+            font-size: 40px;
+            line-height: 40px;
+            letter-spacing: 0.06em;
+        }
+    }
+
+    .sale__small {
+        @media (max-width: 660px) {
+            font-size: 40px;
+            line-height: 40px;
+            letter-spacing: 0.06em;
+        }
+    }
+
+    .sale__bottom {
+        background-color: var(--yellow);
+        padding: clamp(2.5rem, 2.286rem + 0.7vw, 3.125rem) clamp(2.5rem, 0.787rem + 5.59vw, 7.5rem);
+        display: flex;
+        align-items: center;
+    }
+
+    .sale__chocolate {
+        width: clamp(4.5rem, -0.94rem + 17.76vw, 20.375rem);
+        height: clamp(3.875rem, -0.879rem + 15.52vw, 17.75rem);
+        margin-right: clamp(1.25rem, 0.179rem + 3.5vw, 4.375rem);
+    }
+
+    .sale__text {
+        font-size: clamp(1.875rem, 0.976rem + 2.94vw, 4.5rem);
+        font-weight: 700;
+        line-height: clamp(2.25rem, 1.136rem + 3.64vw, 5.5rem);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--brown);
+    }
+}
