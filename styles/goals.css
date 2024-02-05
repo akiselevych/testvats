@@ -31,30 +31,30 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
 
-    &:nth-child(1) {
-        background-image: url('../assets/goals/1.png');
-    }
+.goals__goal:nth-child(1) {
+    background-image: url('../assets/goals/1.png');
+}
 
-    &:nth-child(2) {
-        background-image: url('../assets/goals/2.png');
-    }
+.goals__goal:nth-child(2) {
+    background-image: url('../assets/goals/2.png');
+}
 
-    &:nth-child(3) {
-        background-image: url('../assets/goals/3.png');
-    }
+.goals__goal:nth-child(3) {
+    background-image: url('../assets/goals/3.png');
+}
 
-    &:nth-child(4) {
-        background-image: url('../assets/goals/4.png');
-    }
+.goals__goal:nth-child(4) {
+    background-image: url('../assets/goals/4.png');
+}
 
-    &:nth-child(5) {
-        background-image: url('../assets/goals/5.png');
-    }
+.goals__goal:nth-child(5) {
+    background-image: url('../assets/goals/5.png');
+}
 
-    &:nth-child(6) {
-        background-image: url('../assets/goals/6.png');
-    }
+.goals__goal:nth-child(6) {
+    background-image: url('../assets/goals/6.png');
 }
 
 .goals__num {

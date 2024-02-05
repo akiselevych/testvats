@@ -53,7 +53,10 @@
     margin-right: clamp(0.625rem, -0.609rem + 5.19vw, 5.625rem);
     margin-top: auto;
     overflow: hidden;
-    @media (max-width: 420px) {
+}
+
+@media (max-width: 420px) {
+    .products__smallImg{
         -o-object-fit: cover;
         object-fit: cover;
         overflow: hidden;

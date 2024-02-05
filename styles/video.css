@@ -7,7 +7,10 @@
     display: -ms-flexbox;
     display: flex;
     gap: clamp(1.875rem, -2.411rem + 6.7vw, 5.625rem);
-    @media (max-width: 980px) {
+}
+
+@media (max-width: 980px) {
+    .video__container{
         -webkit-box-orient: vertical;
         -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -16,23 +19,35 @@
         padding-top: clamp(1.25rem, -0.625rem + 6.12vw, 3.125rem);
         padding-bottom: 44px;
     }
+    .video__right{
+        margin-top: 0;
+        margin-right: 0;
+    }
+    .video__cake{
+        display: none;
+    }
+    .video__circle{
+        right: 20%;
+    }
 }
+
+
 .video__video{
     min-width: clamp(22.188rem, 13.6rem + 28.04vw, 47.25rem);
     min-height: clamp(31.563rem, 19.334rem + 39.93vw, 67.25rem);
-    @media (max-width: 380px) {
-        min-width: 250px;
+}
+@media (max-width: 380px) {
+    .video__video{
+        min-width: clamp(22.188rem, 13.6rem + 28.04vw, 47.25rem);
+        min-height: clamp(31.563rem, 19.334rem + 39.93vw, 67.25rem);
     }
 }
+
 .video__right{
     margin-top: clamp(1.188rem, -0.976rem + 7.06vw, 7.5rem);
     margin-right: clamp(1.188rem, -0.547rem + 5.66vw, 6.25rem);
     max-width: clamp(21.188rem, 8.702rem + 40.77vw, 57.625rem);
     position: relative;
-    @media (max-width: 980px) {
-        margin-top: 0;
-        margin-right: 0;
-    }
 }
 .video__title{
     font-family: 'Bebas Neue Cyrillic',sans-serif;
@@ -46,9 +61,6 @@
     width: 100%;
     height: auto;
     max-width: clamp(19.688rem, 4.616rem + 23.55vw, 32.875rem);
-    @media (max-width: 980px) {
-        display: none;
-    }
 }
 .video__circle{
     width: clamp(4.938rem, 2.346rem + 8.46vw, 12.5rem);
@@ -58,13 +70,13 @@
     right: clamp(0rem, -9.071rem + 14.17vw, 7.938rem);
     -webkit-animation: rotate 15s linear infinite;
     animation: rotate 15s linear infinite;
-    @media (max-width: 980px) {
-        right: 20%;
-    }
-    @media (max-width: 540px) {
+}
+@media (max-width: 540px) {
+    .video__circle{
         right: 55px;
     }
 }
+
 .video__eng{
     top: 140px;
 }

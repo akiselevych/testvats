@@ -20,8 +20,10 @@
 .waves__first {
     position: absolute;
     left: 0;
+}
 
-    @media (max-width: 442px) {
+@media (max-width: 442px) {
+    .waves__first {
         left: 3px;
     }
 }
@@ -35,19 +37,34 @@
     position: absolute;
     bottom: 13%;
     left: 31%;
-    @media (max-width: 1480px) {
+}
+
+@media (max-width: 1480px) {
+    .waves__second {
         bottom: 15.8%;
     }
-    @media (max-width: 1065px) {
+}
+
+@media (max-width: 1065px) {
+    .waves__second {
         bottom: 18.2%
     }
-    @media (max-width: 825px) {
+}
+
+@media (max-width: 825px) {
+    .waves__second {
         bottom: 20.5%
     }
-    @media (max-width: 690px) {
+}
+
+@media (max-width: 690px) {
+    .waves__second {
         bottom: 24.5%
     }
-    @media (max-width: 472px) {
+}
+
+@media (max-width: 472px) {
+    .waves__second {
         bottom: 22.5%;
     }
 }

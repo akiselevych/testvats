@@ -13,12 +13,16 @@
     padding-top: clamp(1.5rem, -0.556rem + 6.71vw, 7.5rem);
     padding-bottom: clamp(2.125rem, -1.002rem + 10.21vw, 11.25rem);
     padding-right: clamp(1.25rem, -0.035rem + 4.2vw, 5rem);
-    @media (max-width: 1105px) {
+}
+
+@media (max-width: 1105px) {
+    .benefits__header {
         background-size: cover;
     }
 }
-.benefits__title{
-    font-family: 'Bebas Neue Cyrillic',sans-serif;
+
+.benefits__title {
+    font-family: 'Bebas Neue Cyrillic', sans-serif;
     font-size: clamp(1.25rem, -0.463rem + 5.59vw, 6.25rem);
     font-weight: 400;
     line-height: clamp(1.25rem, -0.463rem + 5.59vw, 6.25rem);
@@ -43,13 +47,23 @@
     top: -12%;
     -o-object-fit: contain;
     object-fit: contain;
-    @media (max-width: 1555px) {
+}
+
+@media (max-width: 1555px) {
+    .benefits__caramel1 {
         top: -8%;
     }
-    @media (max-width: 1335px) {
+
+}
+
+@media (max-width: 1335px) {
+    .benefits__caramel1 {
         top: -4%;
     }
-    @media (max-width: 1060px) {
+}
+
+@media (max-width: 1060px) {
+    .benefits__caramel1 {
         top: 70%;
         left: -2%;
         -webkit-transform: rotate(180deg);
@@ -66,7 +80,10 @@
     bottom: 50px;
     -o-object-fit: contain;
     object-fit: contain;
-    @media (max-width: 1060px) {
+}
+
+@media (max-width: 1060px) {
+    .benefits__caramel2 {
         top: 25%;
     }
 }
@@ -81,11 +98,14 @@
     width: fit-content;
     margin-left: clamp(1.125rem, -4.766rem + 24.81vw, 25rem);
     margin-right: 20px;
-    @media (max-width: 530px) {
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
+}
+
+@media (max-width: 530px) {
+   .benefits__benefit{
+       -webkit-box-align: center;
+       -ms-flex-align: center;
+       align-items: center;
+   }
 }
 
 .benefits__num {
@@ -105,7 +125,6 @@
 }
 
 .benefits__points {
-
     li {
         list-style: disc inside;
         font-size: clamp(1.25rem, 1.157rem + 0.39vw, 1.625rem);

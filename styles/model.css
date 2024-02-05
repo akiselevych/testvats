@@ -65,11 +65,16 @@
     top: -66px;
     width: clamp(22.5rem, 16.075rem + 20.98vw, 41.25rem);
     height: clamp(14.375rem, 7.865rem + 21.26vw, 33.375rem);
-    @media (max-width: 1250px) {
-        right: 20px;
-        top: -30px;
+}
+
+@media (max-width: 1250px) {
+    .model__image{
+    right: 20px;
+    top: -30px;
     }
-    @media (max-width: 1025px) {
-        display: none;
+}
+@media (max-width: 1025px) {
+    .model__image{
+    display: none;
     }
 }

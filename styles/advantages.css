@@ -40,13 +40,13 @@
     -ms-flex-pack: center;
     justify-content: center;
     gap: clamp(0.5rem, 0.418rem + 0.48vw, 1rem);
+}
 
-    &:nth-child(2) {
-        background-color: transparent;
-        background-image: url("../assets/advantages/bc.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+.advantages__card:nth-child(2) {
+    background-color: transparent;
+    background-image: url("../assets/advantages/bc.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .advantages__name {

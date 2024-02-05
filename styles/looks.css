@@ -12,15 +12,21 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     gap: 15px;
-    @media (max-width: 950px) {
+}
+
+@media (max-width: 950px) {
+    .looks__images {
         display: none;
     }
 }
-.looks__container .looks__slider{
+
     @media (min-width: 951px) {
-        display: none;
+        .looks__container .looks__slider{
+            display: none;
+        }
+
     }
-}
+
 .looks__image{
     max-width: clamp(20.625rem, 18.157rem + 10.39vw, 30.625rem);
     max-height: clamp(20.625rem, 18.157rem + 10.39vw, 30.625rem);
@@ -29,10 +35,14 @@
     -o-object-fit: cover;
     object-fit: cover;
     overflow: hidden;
-    @media (max-width: 950px) {
+}
+
+@media (max-width: 950px) {
+    .looks__image{
         max-width: none;
     }
 }
+
 .looks__footer{
     padding: 30px clamp(0.5rem, 0.068rem + 1.82vw, 2.25rem) clamp(1.875rem, 1.489rem + 1.62vw, 3.438rem) clamp(1rem, -0.295rem + 5.45vw, 6.25rem);
 

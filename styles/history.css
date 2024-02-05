@@ -9,7 +9,8 @@
     line-height: 25px;
     letter-spacing: 0.04em;
     text-align: center;
-    &:first-child{
-        margin-bottom: clamp(1.25rem, 0.993rem + 0.84vw, 2rem);
-    }
+}
+
+.history__text:first-child{
+    margin-bottom: clamp(1.25rem, 0.993rem + 0.84vw, 2rem);
 }
