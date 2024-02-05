@@ -59,13 +59,12 @@
     align-items: flex-end;
     gap: 70px;
     max-width: none;
-
-    img {
-        width: clamp(7.375rem, -2.305rem + 31.61vw, 35.625rem);
-        height: clamp(4.063rem, -2.127rem + 20.21vw, 22.125rem);
-        @media (max-width: 1155px) {
-            display: none;
-        }
+}
+.selfmade__image-cake{
+    width: clamp(7.375rem, -2.305rem + 31.61vw, 35.625rem);
+    height: clamp(4.063rem, -2.127rem + 20.21vw, 22.125rem);
+    @media (max-width: 1155px) {
+        display: none;
     }
 }
 
