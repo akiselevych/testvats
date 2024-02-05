@@ -35,7 +35,7 @@
 .products__smallImg {
     object-fit: contain;
     width: 100%;
-    height: fit-content;
+    height: auto;
     margin-right: clamp(0.625rem, -0.609rem + 5.19vw, 5.625rem);
     margin-top: auto;
     overflow: hidden;
@@ -47,7 +47,7 @@
 
 .products__bigImg {
     width: 100%;
-    height: fit-content;
+    height: auto;
     object-fit: contain;
 }
 

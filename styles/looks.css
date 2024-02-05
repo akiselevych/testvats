@@ -12,7 +12,7 @@
         display: none;
     }
 }
-.looks__slider{
+.looks__container .looks__slider{
     @media (min-width: 951px) {
         display: none;
     }
