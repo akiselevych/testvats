@@ -27,18 +27,27 @@
         gap: 72px;
 
         img {
-            max-height: 120px;
-            width: auto;
-            height: clamp(4.063rem, -2.127rem + 20.21vw, 22.125rem);
-            @media (min-width: 1156px) {
-                display: none;
-            }
+            /*max-height: 120px;*/
+            /*width: auto;*/
+            /*height: clamp(4.063rem, -2.127rem + 20.21vw, 22.125rem);*/
+            /*@media (min-width: 1156px) {*/
+            /*    display: none;*/
+            /*}*/
         }
         @media (max-width: 1155px) {
             gap: clamp(0.75rem, -0.539rem + 4.21vw, 2.5rem);
         }
         @media (max-width: 1155px) {
             flex-wrap: wrap;
+        }
+    }
+
+    .selfmade__img1{
+        max-height: 120px;
+        width: auto;
+        height: clamp(4.063rem, -2.127rem + 20.21vw, 22.125rem);
+        @media (min-width: 1156px) {
+            display: none;
         }
     }
 
