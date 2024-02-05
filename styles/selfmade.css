@@ -1,12 +1,10 @@
 
-
 .selfmade__container {
     padding-top: clamp(3rem, 1.244rem + 5.73vw, 8.125rem);
 }
 
 .selfmade__content {
     padding: 0 clamp(0rem, -2.463rem + 8.04vw, 7.188rem) clamp(3.75rem, 3.536rem + 0.7vw, 4.375rem) clamp(1.125rem, -9.989rem + 18.22vw, 11.875rem);
-
     position: relative;
 }
 
@@ -26,16 +24,15 @@
     display: flex;
     align-items: flex-end;
     gap: 72px;
-
     @media (max-width: 1155px) {
         gap: clamp(0.75rem, -0.539rem + 4.21vw, 2.5rem);
     }
-    @media (max-width: 1155px) {
+        @media (max-width: 1155px) {
         flex-wrap: wrap;
     }
 }
 
-.selfmade__img1{
+.selfmade__img1 {
     max-height: 120px;
     width: auto;
     height: clamp(4.063rem, -2.127rem + 20.21vw, 22.125rem);
@@ -60,7 +57,8 @@
     gap: 70px;
     max-width: none;
 }
-.selfmade__image-cake{
+
+.selfmade__image-cake {
     width: clamp(7.375rem, -2.305rem + 31.61vw, 35.625rem);
     height: clamp(4.063rem, -2.127rem + 20.21vw, 22.125rem);
     @media (max-width: 1155px) {
