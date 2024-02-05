@@ -9,14 +9,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     row-gap: clamp(1rem, -0.799rem + 5.87vw, 6.25rem);
-
-    @media (max-width: 1250px) {
-        grid-template-columns: 1fr 1fr;
-    }
-    @media (max-width: 670px) {
-        grid-template-columns: 1fr;
-    }
-
 }
 
 .goals__goal {
@@ -39,6 +31,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+
     &:nth-child(1) {
         background-image: url('../assets/goals/1.png');
     }
@@ -82,4 +75,16 @@
     text-align: center;
     color: var(--brown);
     text-transform: uppercase;
+}
+
+@media (max-width: 1250px) {
+    .goals__container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 670px) {
+    .goals__container {
+        grid-template-columns: 1fr;
+    }
 }
