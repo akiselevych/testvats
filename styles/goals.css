@@ -1,27 +1,36 @@
-
-
 .goals__container {
     padding-top: clamp(2.5rem, -0.927rem + 11.19vw, 12.5rem);
     padding-bottom: clamp(2.5rem, -0.927rem + 11.19vw, 12.5rem);
     max-width: 1440px;
     margin: 0 auto;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     row-gap: clamp(1rem, -0.799rem + 5.87vw, 6.25rem);
+
     @media (max-width: 1250px) {
         grid-template-columns: 1fr 1fr;
     }
     @media (max-width: 670px) {
         grid-template-columns: 1fr;
     }
+
 }
 
 .goals__goal {
     width: clamp(18.438rem, 14.047rem + 14.34vw, 31.25rem);
     height: clamp(13.75rem, 12.144rem + 5.24vw, 18.438rem);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
 

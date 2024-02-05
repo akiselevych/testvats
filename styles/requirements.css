@@ -6,8 +6,14 @@
 
 .requirements__top{
     padding-bottom: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
     padding-left: clamp(0.625rem, 2.08vw, 2.5rem);
     padding-right: clamp(0.625rem, 2.08vw, 2.5rem);
@@ -26,6 +32,8 @@
     text-wrap: nowrap;
 }
 .requirements__eng{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -37,7 +45,12 @@
 .requirements__bottom{
     padding: clamp(2.875rem, 2.227rem + 2.73vw, 5.5rem) clamp(1.125rem, -0.186rem + 5.52vw, 6.438rem);
     background-color: rgba(234, 224, 198, 1);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 20px;
     color: rgba(92, 61, 50, 1);
@@ -51,6 +64,8 @@
     font-weight: 400;
     line-height: 25px;
     letter-spacing: 0.04em;
+    -webkit-transition: none;
+    -o-transition: none;
     transition: none;
     &:not(:first-child){
         @media (max-width: 720px) {
@@ -62,6 +77,8 @@
 .requirements__open_text{
     gap: 20px;
     p{
+        -webkit-transition: all 0.3s ease-in-out !important;
+        -o-transition: all 0.3s ease-in-out !important;
         transition: all 0.3s ease-in-out !important;
         height: initial !important;
         opacity:1 !important;
@@ -70,6 +87,8 @@
 .requirements__arrow{
     margin-left: auto;
     margin-top: 40px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     @media (min-width: 721px) {
@@ -77,5 +96,7 @@
     }
 }
 .requirements__open{
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }

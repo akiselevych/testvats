@@ -1,8 +1,13 @@
 
 
 .sign__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     @media (max-width: 1260px) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 }
@@ -11,6 +16,7 @@
     display: block;
     min-width: clamp(23.75rem, 12.571rem + 36.5vw, 56.375rem);
     height: auto;
+    -o-object-fit: cover;
     object-fit: cover;
     @media (max-width: 1260px) {
         width: 100%;
@@ -23,14 +29,26 @@
 
 .sign__right {
     padding: clamp(3.75rem, 3.086rem + 2.17vw, 5.688rem) clamp(2rem, 0.972rem + 3.36vw, 5rem) 46px clamp(2rem, 1.55rem + 1.47vw, 3.313rem);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     gap: 35px;
 }
 
 .sign__text_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 30px;
 }

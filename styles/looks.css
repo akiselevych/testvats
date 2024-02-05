@@ -5,7 +5,11 @@
 }
 
 .looks__images{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     gap: 15px;
     @media (max-width: 950px) {
@@ -22,6 +26,7 @@
     max-height: clamp(20.625rem, 18.157rem + 10.39vw, 30.625rem);
     width: 100%;
     height: auto;
+    -o-object-fit: cover;
     object-fit: cover;
     overflow: hidden;
     @media (max-width: 950px) {
@@ -31,8 +36,16 @@
 .looks__footer{
     padding: 30px clamp(0.5rem, 0.068rem + 1.82vw, 2.25rem) clamp(1.875rem, 1.489rem + 1.62vw, 3.438rem) clamp(1rem, -0.295rem + 5.45vw, 6.25rem);
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .looks__footer-image{

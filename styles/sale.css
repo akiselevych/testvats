@@ -11,6 +11,8 @@
     line-height: clamp(3.375rem, 0.462rem + 9.51vw, 11.875rem);
     letter-spacing: 0.06em;
     color: var(--yellow);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
     @media (max-width: 660px) {
@@ -60,7 +62,11 @@
 .sale__bottom {
     background-color: var(--yellow);
     padding: clamp(2.5rem, 2.286rem + 0.7vw, 3.125rem) clamp(2.5rem, 0.787rem + 5.59vw, 7.5rem);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 

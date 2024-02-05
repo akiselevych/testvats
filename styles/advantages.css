@@ -1,10 +1,16 @@
-
 .advantages__container {
     background-color: var(--yellow);
     padding: clamp(1.25rem, 0.636rem + 3.64vw, 5rem) 24px clamp(1.25rem, 0.432rem + 4.85vw, 6.25rem);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-column-gap: clamp(2.5rem, -5.126rem + 12.61vw, 10rem);
+    -moz-column-gap: clamp(2.5rem, -5.126rem + 12.61vw, 10rem);
     column-gap: clamp(2.5rem, -5.126rem + 12.61vw, 10rem);
     row-gap: clamp(1.875rem, -0.985rem + 4.73vw, 4.688rem);
     justify-items: center;
@@ -18,9 +24,20 @@
     padding: 18px clamp(0.5rem, -0.136rem + 1.05vw, 1.125rem);
     border-radius: 10px;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     gap: clamp(0.5rem, 0.418rem + 0.48vw, 1rem);
 
@@ -57,8 +74,16 @@
     border-radius: 50%;
     background-color: var(--brown);
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 
     position: fixed;
@@ -66,5 +91,3 @@
     top: 85%;
     z-index: 25;
 }
-
-

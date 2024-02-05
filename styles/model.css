@@ -20,6 +20,8 @@
     text-align: center;
     color: var(--brown);
     margin: 0 auto clamp(1.5rem, 0.729rem + 2.52vw, 3.75rem);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 
