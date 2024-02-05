@@ -2,49 +2,48 @@
 
 .looks__container{
     padding-top: clamp(3.75rem, 1.591rem + 9.09vw, 12.5rem);
+}
 
-    .looks__images{
-        display: flex;
-        justify-content: space-between;
-        gap: 15px;
-        @media (max-width: 950px) {
-            display: none;
-        }
+.looks__images{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    @media (max-width: 950px) {
+        display: none;
     }
-    .looks__slider{
-        @media (min-width: 951px) {
-            display: none;
-        }
+}
+.looks__slider{
+    @media (min-width: 951px) {
+        display: none;
     }
-    .looks__image{
-        max-width: clamp(20.625rem, 18.157rem + 10.39vw, 30.625rem);
-        max-height: clamp(20.625rem, 18.157rem + 10.39vw, 30.625rem);
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        overflow: hidden;
-        @media (max-width: 950px) {
-            max-width: none;
-        }
+}
+.looks__image{
+    max-width: clamp(20.625rem, 18.157rem + 10.39vw, 30.625rem);
+    max-height: clamp(20.625rem, 18.157rem + 10.39vw, 30.625rem);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    @media (max-width: 950px) {
+        max-width: none;
     }
-    .looks__footer{
-        padding: 30px clamp(0.5rem, 0.068rem + 1.82vw, 2.25rem) clamp(1.875rem, 1.489rem + 1.62vw, 3.438rem) clamp(1rem, -0.295rem + 5.45vw, 6.25rem);
+}
+.looks__footer{
+    padding: 30px clamp(0.5rem, 0.068rem + 1.82vw, 2.25rem) clamp(1.875rem, 1.489rem + 1.62vw, 3.438rem) clamp(1rem, -0.295rem + 5.45vw, 6.25rem);
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        img{
-            width: clamp(5.875rem, 0.585rem + 22.27vw, 27.313rem);
-            height: clamp(4.063rem, 0.438rem + 15.26vw, 18.75rem);
-        }
-    }
-    .looks__title{
-        font-family: 'Bebas Neue Cyrillic',sans-serif;
-        font-size: clamp(1.5rem, 0.328rem + 4.94vw, 6.25rem);
-        font-weight: 400;
-        line-height: clamp(1.5rem, 0.328rem + 4.94vw, 6.25rem);
-        letter-spacing: 0.06em;
-        color: var(--brown);
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.looks__footer-image{
+    width: clamp(5.875rem, 0.585rem + 22.27vw, 27.313rem);
+    height: clamp(4.063rem, 0.438rem + 15.26vw, 18.75rem);
+}
+.looks__title{
+    font-family: 'Bebas Neue Cyrillic',sans-serif;
+    font-size: clamp(1.5rem, 0.328rem + 4.94vw, 6.25rem);
+    font-weight: 400;
+    line-height: clamp(1.5rem, 0.328rem + 4.94vw, 6.25rem);
+    letter-spacing: 0.06em;
+    color: var(--brown);
 }

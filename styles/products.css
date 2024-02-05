@@ -1,55 +1,53 @@
 
-.products__container {
 
-    .products__top {
-        display: flex;
-        background-color: var(--yellow);
-        width: 100%;
-    }
+.products__top {
+    display: flex;
+    background-color: var(--yellow);
+    width: 100%;
+}
 
-    .products__text {
-        display: flex;
-        flex-direction: column;
-        padding: clamp(0.5rem, -0.185rem + 2.24vw, 2.5rem);
-    }
+.products__text {
+    display: flex;
+    flex-direction: column;
+    padding: clamp(0.5rem, -0.185rem + 2.24vw, 2.5rem);
+}
 
-    .products__country {
-        display: block;
-        width: clamp(6rem, -1.303rem + 23.85vw, 27.313rem);
-        height: clamp(4.75rem, -1.075rem + 19.02vw, 21.75rem);
-    }
+.products__country {
+    display: block;
+    width: clamp(6rem, -1.303rem + 23.85vw, 27.313rem);
+    height: clamp(4.75rem, -1.075rem + 19.02vw, 21.75rem);
+}
 
-    .products__title {
-        font-family: 'Bebas Neue Cyrillic', sans-serif;
-        font-size: clamp(2rem, -0.741rem + 8.95vw, 10rem);
-        font-weight: 400;
-        line-height: clamp(2rem, -0.741rem + 8.95vw, 10rem);
-        letter-spacing: 0.04em;
-        writing-mode: vertical-rl;
-        transform: rotate(180deg);
-        text-align: left;
-        color: white;
-        width: fit-content;
-        margin-left: auto;
-    }
+.products__title {
+    font-family: 'Bebas Neue Cyrillic', sans-serif;
+    font-size: clamp(2rem, -0.741rem + 8.95vw, 10rem);
+    font-weight: 400;
+    line-height: clamp(2rem, -0.741rem + 8.95vw, 10rem);
+    letter-spacing: 0.04em;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: left;
+    color: white;
+    width: fit-content;
+    margin-left: auto;
+}
 
-    .products__smallImg {
-        object-fit: contain;
-        width: 100%;
-        height: fit-content;
-        margin-right: clamp(0.625rem, -0.609rem + 5.19vw, 5.625rem);
-        margin-top: auto;
+.products__smallImg {
+    object-fit: contain;
+    width: 100%;
+    height: fit-content;
+    margin-right: clamp(0.625rem, -0.609rem + 5.19vw, 5.625rem);
+    margin-top: auto;
+    overflow: hidden;
+    @media (max-width: 420px) {
+        object-fit: cover;
         overflow: hidden;
-        @media (max-width: 420px) {
-            object-fit: cover;
-            overflow: hidden;
-        }
     }
+}
 
-    .products__bigImg {
-        width: 100%;
-        height: fit-content;
-        object-fit: contain;
-    }
+.products__bigImg {
+    width: 100%;
+    height: fit-content;
+    object-fit: contain;
 }
 
