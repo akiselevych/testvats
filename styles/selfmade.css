@@ -16,7 +16,7 @@
     position: absolute;
     top: 0;
 
-    @media (max-width: 1155px) {
+    @media only screen and (max-width: 1155px) {
         position: static;
         margin-bottom: clamp(1.375rem, 0.304rem + 3.5vw, 4.5rem);
     }
@@ -31,10 +31,10 @@
     -ms-flex-align: end;
     align-items: flex-end;
     gap: 72px;
-    @media (max-width: 1155px) {
+    @media only screen and  (max-width: 1155px) {
         gap: clamp(0.75rem, -0.539rem + 4.21vw, 2.5rem);
     }
-    @media (max-width: 1155px) {
+    @media  only screen and (max-width: 1155px) {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
