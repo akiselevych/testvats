@@ -45,8 +45,11 @@ function handlePhone(e) {
 }
 
 function toggleOpenVideo(){
+    console.log('ww')
     const video = document.querySelector('.video__modal');
     video.classList.toggle('open');
+
+    document.querySelector('.video__overlay').classList.toggle('open');
 
     document.body.style.overflow = video.classList.contains('open') ? 'hidden' : 'auto';
 }

@@ -38,6 +38,7 @@
     background-color: rgba(234, 224, 198, 1);
     padding: clamp(2rem, 0.544rem + 4.76vw, 6.25rem) 5px clamp(2rem, 0.544rem + 4.76vw, 6.25rem) clamp(1.125rem, -3.415rem + 14.83vw, 14.375rem);
     position: relative;
+    z-index: 1;
 }
 
 
