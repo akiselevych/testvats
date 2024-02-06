@@ -44,12 +44,23 @@ function handlePhone(e) {
     e.target.value = e.target.value.replace(/\D/g, '')
 }
 
-function toggleOpenVideo(){
-    console.log('ww')
+function toggleOpenVideo() {
     const video = document.querySelector('.video__modal');
+
+    if (!video.classList.contains('open')) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        const iframe_tag = video.querySelector('iframe');
+        iframe_tag.remove();
+        video.innerHTML = ` <iframe loading="lazy" src="https://www.youtube.com/embed/1VcPP8V9P3Y?si=qKn-NnDbO5gkjj83"
+                    title="YouTube video player" frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen class="video__iframe"></iframe>`
+
+        document.body.style.overflow = 'auto';
+    }
+
     video.classList.toggle('open');
 
     document.querySelector('.video__overlay').classList.toggle('open');
-
-    document.body.style.overflow = video.classList.contains('open') ? 'hidden' : 'auto';
 }
