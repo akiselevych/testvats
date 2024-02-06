@@ -283,14 +283,21 @@
     </div>
 </section>
 <section class="video__container">
-    <iframe loading="lazy" src="https://www.youtube.com/embed/1VcPP8V9P3Y?si=qKn-NnDbO5gkjj83"
-            title="YouTube video player" frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen class="video__video"></iframe>
+    <div class="video__video" onclick="toggleOpenVideo()">
+        <img src="./assets/video/video.png" alt="video" class="video__image">
+        <img src="./assets/video/play.png" alt="play" class="video__play">
+    </div>
     <div class="video__right">
-        <h2 class="video__title">Take a virtual tour <br/> of the production facilities</h2>
+        <h2 class="video__title">Take a virtual tour  of the production facilities</h2>
         <img src="./assets/video/cake.png" alt="cake" class="video__cake"/>
         <img src="./assets/video/circle.png" alt="circle" class="video__circle"/>
+    </div>
+    <div class="video__modal">
+            <iframe loading="lazy" src="https://www.youtube.com/embed/1VcPP8V9P3Y?si=qKn-NnDbO5gkjj83"
+                    title="YouTube video player" frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen class="video__iframe"></iframe>
+        <div class="video__overlay" onclick="toggleOpenVideo()"></div>
     </div>
 </section>
 <section class="model__container">

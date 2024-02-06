@@ -43,3 +43,10 @@ phone.addEventListener("input", handlePhone)
 function handlePhone(e) {
     e.target.value = e.target.value.replace(/\D/g, '')
 }
+
+function toggleOpenVideo(){
+    const video = document.querySelector('.video__modal');
+    video.classList.toggle('open');
+
+    document.body.style.overflow = video.classList.contains('open') ? 'hidden' : 'auto';
+}
